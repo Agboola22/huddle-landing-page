@@ -1,0 +1,412 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+body {
+    font-size: 18px;
+    font-family: 'Open sans', sans-serif;
+}
+body::-webkit-scrollbar-button {
+    
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    color : hsl(192, 100%, 9%);
+    font-weight: 700;
+}
+
+h1 {
+    font-size: clamp(1.5rem, 1.2697rem + 1.2281vw, 2.375rem);
+    line-height: 1.5;
+}
+h2 {
+    font-size: clamp(1.25rem, 1.1184rem + 0.7018vw, 1.75rem);
+    line-height: 1.3;
+}
+p {
+    color: hsl(208, 11%, 55%);
+}
+
+h2,
+p {
+    margin-block: 1em;
+}
+
+
+/* top styling */
+.top-container {
+    background-image: url(./images/bg-hero-desktop.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: aliceblue;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 1.5rem;
+}
+
+.top {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1rem;
+}
+
+.top a {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px hsl(208, 11%, 55%);
+    text-decoration: none;
+    color: hsl(192, 100%, 9%);
+    width: max-content;
+    padding: 0.8rem 2.5rem;
+    border-radius: 30px;
+    font-weight: 700;
+}
+
+.top a:hover {
+    background-color: hsl(322, 100%, 66%);
+    box-shadow: 3px 3px 10px lightblue;
+    color: #fff;
+    transition: all 0.25s linear;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    width: 90%;
+    margin: auto;
+    padding-top: 3rem;
+}
+
+.bottom .left {
+     flex: 1;
+     padding: 0 1rem;
+}
+
+.bottom .left p {
+    color: hsl(192, 100%, 9%);
+    font-weight: 400;
+}
+
+/* top button */
+.bottom .left .btn-top-container {
+    border: none;
+    background-color:  hsl(322, 100%, 66%);
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    padding: 1rem 1.2rem;
+    width: 35%;
+    font-weight: 700;
+    font-family: initial;
+    font-size: 1rem; 
+    transition: background-color 0.25s linear;
+}
+
+.bottom .left .btn-top-container:hover {
+    background-color: rgb(216, 161, 170);
+}
+
+.right {
+    flex: 1;
+}
+
+.right img {
+    width: 100%;
+}
+/*  main body */
+main {
+    width: 90%;
+    margin: auto;
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-bottom: 3rem;
+}
+
+/* three imgv $ text container */
+.first-container, .second-container, .third-container {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid rgb(243, 235, 235);
+    box-shadow: 0px 0px 10px rgb(210, 210, 226);
+    padding: 1rem 2rem;
+}
+.first-container .a img, .second-container .a img, .third-container .a img {
+    width: 80%;
+    margin: 0 auto;
+} 
+.first-container .a, .second-container .a, .third-container .a {
+    flex: 1;
+}
+.first-container .b, .second-container .b, .third-container .b {
+    flex: 1;
+}   
+.first-container .a img, .third-container .a img {
+    float: right;
+}
+
+/* floatong box  over footer */
+
+.sign-in-container {
+     position: absolute;
+     top: -7.5rem;
+     left: 30vw;
+     width: 40vw;
+     background-color: #fff;
+     border-radius: 10px;
+     text-align: center;
+     padding: 2.5rem 0;
+     border: 1px solid rgb(243, 235, 235);
+     box-shadow: 0px 0px 10px rgb(210, 210, 226);
+} 
+
+.sign-in-container button.btn-sign-in-container {
+    border: none;
+    background-color:  hsl(322, 100%, 66%);
+    border-radius: 30px;
+    box-shadow: 0px 0px 6px rgb(179, 120, 120);
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    padding: 1.2rem 1.2rem;
+    width: 40%;
+    font-weight: 700;
+    font-family: initial;
+    font-size: 1rem; 
+    transition: all 0.25s linear;
+}
+.sign-in-container .btn-sign-in-container:hover {
+    background-color: purple;
+    box-shadow: 0px 0px 10px rgb(199, 199, 233);
+} 
+
+/* footer styles */
+
+footer {
+    background-color: hsl(192, 100%, 9%);
+    position: relative;
+    color: #fff;
+    margin-top: 10rem;
+    padding-block: 5rem;
+}
+
+.wrapper {
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.down-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+/* boxes in footer */
+.down-container > * {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+}
+
+.down-container .socials {
+    -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+          /* align-items: flex-start; */
+}
+
+.text li, .phone li, .mail li {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    gap: 1rem;
+}
+.text li img {
+    display: flex;
+    align-self: flex-start;
+}
+/* icon styling */
+.down-container .socials a {
+    font-size: 20px;
+    transition: all 0.25s linear;
+}
+.down-container .socials ion-icon:hover {
+    color: #00f;
+    
+}
+ion-icon {
+    color: white;
+  }
+
+.down-container .footer-images > * {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1rem;
+    -webkit-box-align: center;
+       -ms-flex-align: center;
+          align-items: center;
+}
+
+
+/* links in footer */
+.footer-links li {
+    list-style-type: none;
+    position: relative;
+}  
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+ .footer-links a:hover::after {
+    width: 100%;
+}
+/* speacisl effects */
+.footer-links a::after {
+    content: "";
+  height: 1px;
+  width: 0;
+  position: absolute;
+  background-color: #fff;
+  right: 0;
+  left: 0;
+  bottom: -2px;
+  margin-inline: auto;
+  -webkit-transform: scaleY(1.5);
+          transform: scaleY(1.5);
+  -webkit-transition: width 0.25s linear;
+  transition: width 0.25s linear;
+}  
+
+.socials li {
+    list-style-type: none;
+    padding: 0.5rem 0;
+}
+/* copyright */
+.down-container ~ span {
+    float: right;
+    padding: 2rem 0;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        text-align: center;
+    }
+    .top-container {
+        background-image: url(./images/bg-hero-mobile.svg);
+    }
+    .top .logo-container {
+        flex: 3;
+        display: flex;
+        justify-self: start;
+    }
+    .top .logo-container img {
+        width: 80%;
+    }
+    .top a {
+       flex: 2;
+       padding: 1rem 1.5rem;
+       /* font-size: 1rem; */
+    }
+    .top {
+        display: flex;
+        justify-content: space-between;
+        gap: 3rem; 
+        width: 100%;
+    }
+    .bottom {
+        align-content: center;
+        align-items: center;
+        flex-flow: wrap;
+        flex-direction: column;
+        gap: 1rem;
+        margin: auto;
+        width: 100%;
+    }
+     .bottom .left .btn-top-container {
+        margin: auto;
+        width: 70%;
+    } 
+    .first-container, .third-container {
+        flex-direction: column-reverse;
+        /* text-align: left; */
+    }
+    .second-container {
+        flex-direction: column;
+    }
+    .first-container .a img, .second-container.a img, .third-container .a img {
+        width: 100%;
+    }
+    /* footer */
+    .footer .sign-in-container {
+        width: 95%;
+        margin: 0 auto;
+        top: -7rem;
+        left: 1rem;
+        padding: 1.5rem 0;
+    }
+    .wrapper {
+        margin-top: 2rem;
+        text-align: left;
+    }
+    .down-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+    .down-container .socials {
+       margin: auto;
+    }
+    .down-container ~ span {
+        margin: auto;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .bottom {
+        align-items: stretch;
+    }
+    .bottom .left .btn-top-container {
+        width: 70%;
+    }
+    .footer .sign-in-container {
+        width: 70%;
+        margin: auto;
+        top: -7rem;
+        left: 6.5rem;
+    }
+    .wrapper {
+        margin-top: 2rem;
+    }   
+}
+
